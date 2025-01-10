@@ -18,4 +18,4 @@ Now rename that downloaded CraftBukkit file to `craftbukkit.jar` (`craftbukkit` 
 
 Now you may open it in your IDE (I like to use IntelliJ) and begin developing your plugin!
 
-To build it just run `mvn package`. The Bukkit API is very similar to what it/the Spigot API is now due to backwards compatability. Just missing the newer features.
+To build it just run `./gradlew build`. The Bukkit API is very similar to what it/the Spigot API is now due to backwards compatability. Just missing the newer features.
