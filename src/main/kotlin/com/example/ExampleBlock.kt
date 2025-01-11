@@ -16,7 +16,8 @@ class ExampleBlock : GenericCustomBlock(Main.get(), "exampleblock", true, Generi
     override fun onBlockInteract(world: World, x: Int, y: Int, z: Int, player: SpoutPlayer): Boolean {
         if (!player.isSpoutCraftEnabled) return false; // Only interact if Spout player (Spout can allow vanilla clients to join)
 
-        player.inventory.addItem(SpoutItemStack(Main.get().exampleBlock))// Give player a Spout block
+        player.inventory.addItem(SpoutItemStack(Main.get().exampleBlock)) // Give player a Spout block
+        player.updateInventory(); // Update the player's inventory (temporary fix)
         return true
     }
 }
