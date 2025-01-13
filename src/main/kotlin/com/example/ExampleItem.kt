@@ -8,7 +8,7 @@ import org.getspout.spoutapi.player.SpoutPlayer
 
 // GenericCustomItem is the class to extend for a custom item
 // Plugin instance, Item ID, url to PNG texture
-class ExampleItem : GenericCustomItem(Main.get(), "exampleitem", "PNG url") {
+class ExampleItem : GenericCustomItem(Main.get(), "exampleitem", "https://i.ibb.co/sCFvQBD/q6wBozz.png") {
     init {
         name = "Example Item" // Set item name
         // setStackable(false); // Makes item not stackable
