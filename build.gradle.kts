@@ -17,9 +17,8 @@ tasks {
     build {
         dependsOn(shadowJar)
     }
-
-    shadowJar{
-        minimize()
+    shadowJar {
+        archiveClassifier = ""
     }
 }
 
