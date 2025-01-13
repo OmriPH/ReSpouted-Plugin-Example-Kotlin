@@ -8,8 +8,8 @@ repositories {
 }
 
 dependencies {
-    implementation(files("lib/spoutpluginapi.jar"))
-    implementation(files("lib/craftbukkit.jar"))
+    compileOnly(files("lib/spoutpluginapi.jar"))
+    compileOnly(files("lib/craftbukkit.jar"))
     implementation(kotlin("stdlib"))
 }
 
